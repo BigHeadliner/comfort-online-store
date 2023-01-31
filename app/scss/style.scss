@@ -4,7 +4,26 @@
 @import 'libs';  
 @import 'global';
 
-
+.header{ 
+    &__top{ 
+       padding: 20px 0; 
+       background-color: $main-green-color; 
+       display: flex; 
+       justify-content: center;
+    } 
+     
+   &__top-text{ 
+      font-size: 20px; 
+      line-height: 28px; 
+      color:#FFF; 
+      padding: 0 15px;
+   } 
+    
+   &__top-text--border{ 
+    border-left: 1px solid #FFF; 
+    border-right: 1px solid #FFF;
+   }
+}
 
 
 @import 'media'; 

@@ -113,6 +113,76 @@
 
    }
 
+} 
+ 
+.footer{ 
+   background: #232323;  
+   padding-top: 175px;  
+   color:#FFF;
+ &__top{ 
+   border-top: 1px solid #FFF;
+ } 
+   
+ &__top-office{ 
+   border: 1px solid goldenrod; 
+   max-width: 333px;
+ }
+
+ &__top-title{ 
+   font-size: 25px; 
+   @extend %outfit-300; 
+   margin-bottom: 24px;
+ }  
+   
+ &__top-address{ 
+   @extend %hkgrotesk-400; 
+   font-size: 25px;
+ }
+
+ &__top-address--last{ 
+    margin-bottom: 38px;
+ } 
+  
+ &__top-contact{ 
+    color:#FFF;  
+    border: 1px solid transparent; 
+    position: relative; 
+    padding-left: 53px;  
+    display: inline-block;
+    &::before{  
+      content: '';
+      width: 36px;
+      height: 31px;
+      position: absolute;   
+      top: 5px;
+      left: 7px;
+      border: 1px solid transparent;
+    }
+  } 
+   
+  &__top-contact--phone{ 
+   &::before{   
+      background-image: url('../images/footer/phone.svg'); 
+      background-repeat: no-repeat; 
+      background-position: center;
+    } 
+  } 
+   
+  &__top-contact--email{ 
+   &::before{   
+      background-image: url('../images/footer/mail.svg'); 
+      background-repeat: no-repeat; 
+      background-position: center;
+    } 
+  }
+   
+  &__top-product-item{  
+     margin-bottom: 20px; 
+     font-size: 25px; 
+     @extend %hkgrotesk-500;
+   }
+ 
+
 }
 
 

@@ -4,28 +4,116 @@
 @import 'libs';  
 @import 'global';
 
-.header{ 
-    &__top{ 
-       padding: 20px 0; 
-       background-color: $main-green-color; 
-       display: flex; 
-       justify-content: center;
-    } 
-     
-   &__top-text{ 
-      font-size: 20px; 
-      line-height: 28px; 
-      color:#FFF; 
-      padding: 0 15px;
-   } 
-    
-   &__top-text--border{ 
-    border-left: 1px solid #FFF; 
-    border-right: 1px solid #FFF;
+.header {
+   &__top {
+      padding: 20px 0;
+      background-color: $main-green-color;
+      display: flex;
+      justify-content: center;
    }
+
+   &__top-text {
+      font-size: 20px;
+      line-height: 28px;
+      color: #FFF;
+      padding: 0 15px;
+   }
+
+   &__top-text--border {
+      border-left: 1px solid #FFF;
+      border-right: 1px solid #FFF;
+   }
+
+   &__menu { 
+      position: relative;
+      border: 1px solid green;  
+      overflow: hidden;
+      .logo{ 
+         position: absolute;
+         left: 0;
+         right: 0;
+         margin: 29px auto 0; 
+         width: fit-content;
+       }  
+
+       .logo-text{ 
+         @extend %hkgrotesk-600legacy; 
+         color: $main-green-color; 
+         font-size: 47px;
+       } 
+
+      .menu {
+         border: 1px solid purple;
+         &__list {
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            height: 100px;
+         }
+ 
+         &__item{ 
+           transition: all .5s; 
+         } 
+
+         &__item + .menu__item {
+            margin-left: 40px; 
+         } 
+          
+         &__item + .menu__item--big-margin{  
+            margin-left: 507px;
+         }
+          
+         &__item-basket{ 
+            margin-left: 30px;
+         } 
+          
+         &__item-search{ 
+            margin-left: 40px;
+         }
+
+         &__link {
+            font-size: 20px;
+            line-height: 33px;
+            color: $main-text-color; 
+            padding: 0 5px 4px;
+             transition: all .3s;
+            &:hover {
+               color: $main-green-color;  
+               border-bottom: 1px solid $main-green-color;   
+            }
+         } 
+          
+        &__link-basket{ 
+            position: relative; 
+          
+         } 
+          
+        &__link-basket-span{ 
+            width: 25px; 
+            height: 25px; 
+            border-radius: 50%; 
+            background: $main-btn-color;  
+            font-size: 18px;  
+            @extend %outfit-300; 
+            color:#FFF;  
+            display: inline-block; 
+            display: flex; 
+            justify-content: center;
+            align-items: center; 
+            position: absolute;
+            top: 13px;
+            left: 10px;
+         } 
+          
+         &__link-search-img{ 
+            margin-top: 9px;
+         }
+         
+      }
+
+   }
+
 }
 
 
-@import 'media'; 
- 
- 
+@import 'media';

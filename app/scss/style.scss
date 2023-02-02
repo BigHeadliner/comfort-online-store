@@ -120,12 +120,24 @@
    padding-top: 175px;  
    color:#FFF;
  &__top{ 
-   border-top: 1px solid #FFF;
+   border-top: 1px solid #FFF; 
+   display: flex;
  } 
    
  &__top-office{ 
-   border: 1px solid goldenrod; 
-   max-width: 333px;
+   border: 1px solid transparent; 
+   max-width: 285px;  
+   margin-right: 385px;
+ } 
+  
+ &__top-product{ 
+    margin-right: 82px; 
+    max-width: 257px;
+ } 
+  
+ &__top-help{ 
+   max-width: 103px; 
+   margin-right: 97px;
  }
 
  &__top-title{ 
@@ -176,12 +188,51 @@
     } 
   }
    
-  &__top-product-item{  
+  &__top-product-item, 
+  &__top-help-item{  
      margin-bottom: 20px; 
      font-size: 25px; 
      @extend %hkgrotesk-500;
-   }
- 
+   } 
+      
+  &__top-join{ 
+     max-width: 450px;
+  }
+
+  &__top-form{ 
+    margin: 65px 0 20px;
+  }
+
+  &__top-form-inner{ 
+    display: flex; 
+    justify-content: space-between; 
+  } 
+   
+  &__top-input{ 
+    background: transparent; 
+    border: none; 
+    border-bottom: 1px solid #FFF; 
+    @extend %hkgrotesk-400; 
+    margin-right: 28px; 
+    padding: 0 10px; 
+    color: #FFF;
+  }
+  
+  &__top-btn{  
+    width: 67px; 
+    height: 67px;  
+    border-radius: 10px 10px 0 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border: 1px solid transparent;
+  } 
+   
+  &__top-text{ 
+    @extend %hkgrotesk-400;   
+    font-size: 25px; 
+    line-height: 35px;
+  }
 
 }
 

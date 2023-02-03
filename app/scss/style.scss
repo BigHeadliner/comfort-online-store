@@ -4,10 +4,10 @@
 @import 'libs';  
 @import 'global';
 
-.header {
+.header { 
+   background-color: $main-green-color;
    &__top {
       padding: 20px 0;
-      background-color: $main-green-color;
       display: flex;
       justify-content: center;
    }
@@ -26,7 +26,7 @@
 
    &__menu { 
       position: relative;
-      border: 1px solid green;  
+      border: 1px solid transparent;  
       overflow: hidden;
       .logo{ 
          position: absolute;
@@ -43,7 +43,7 @@
        } 
 
       .menu {
-         border: 1px solid purple;
+         border: 1px solid transparent;
          &__list {
             display: flex;
             align-items: center;
@@ -117,11 +117,14 @@
  
 .footer{ 
    background: #232323;  
-   padding-top: 175px;  
+   padding-top: 135px;  
    color:#FFF;
  &__top{ 
    border-top: 1px solid #FFF; 
-   display: flex;
+   display: flex; 
+   overflow: hidden; 
+   margin-bottom: 47px; 
+   padding-top: 53px;
  } 
    
  &__top-office{ 
@@ -182,7 +185,7 @@
    
   &__top-contact--email{ 
    &::before{   
-      background-image: url('../images/footer/mail.svg'); 
+      background-image: url('../images/footer/email.svg'); 
       background-repeat: no-repeat; 
       background-position: center;
     } 
@@ -232,6 +235,37 @@
     @extend %hkgrotesk-400;   
     font-size: 25px; 
     line-height: 35px;
+  }  
+   
+  &__bottom-wrapper{ 
+    display: flex; 
+    justify-content: space-between; 
+    max-width: 1635px;
+  }
+   
+  &__bottom-menu{ 
+   display: flex; 
+   justify-content: space-between; 
+   align-items: center; 
+   max-width: 570px; 
+   width: 100%; 
+   margin-bottom: 35px;
+  }  
+   
+ &__bottom-social{ 
+    max-width: 135px; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+ }
+   
+  &__bottom-payment{ 
+    max-width: 370px; 
+    width: 100%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 48px;
   }
 
 }

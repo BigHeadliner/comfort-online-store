@@ -1,6 +1,6 @@
   $main-green-color: #3A5041; 
-  $main-text-color: #848484;                     
-  $main-btn-color: #B58269;
+  $main-text-color: #848484;               
+  $main-btn-color: #B58269;    
 
   /*-- fonts --*/  
      
@@ -47,4 +47,27 @@
    %gillsans-400{  
     font-family: 'GillSans-Regular';
     font-weight: 400;
-   }
+   } 
+    
+    //  buttons  
+     
+    .main-btn {
+      color: #FFF;
+      background: $main-btn-color;
+      font-size: 25px;
+      border: 1px solid transparent;
+      @extend %hkgrotesk-400;
+      cursor: pointer;
+      transition: all .5s;
+      // &:hover {
+      //   color: #FFF; 
+      //   background: $main-green-color;
+      // }
+    }
+   
+  .main-title{ 
+    @extend %outfit-500; 
+    font-size: 75px; 
+    line-height: 95px; 
+    color: #FFF; 
+  }

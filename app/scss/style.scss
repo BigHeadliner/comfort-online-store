@@ -222,6 +222,43 @@
     text-align: center;
   }
 }
+ 
+.advantages{ 
+   padding: 77px 0; 
+   background-color: $main-green-color;  
+   color:#FFF; 
+    
+  &__inner{ 
+   display: flex; 
+  }
+    
+  &__item{ 
+   border: 1px solid transparent; 
+   text-align: center; 
+   max-width: 597px; 
+   width: 100%;
+  }  
+   
+  &__item--borders{ 
+   border-left: 1px solid #FFF; 
+   border-right: 1px solid #FFF;
+  }
+   
+  &__item-img{ 
+    margin: 0 auto 28px;
+  } 
+   
+  &__item-title{ 
+   @extend  %outfit-300; 
+   font-size: 25px; 
+   margin-bottom: 17px; 
+   text-transform: uppercase;
+  } 
+   
+  &__subtitle{ 
+    margin-bottom: 43px;
+  }
+}
 
 
 .footer {

@@ -56,7 +56,8 @@ function nunjucks(){
     'node_modules/ion-rangeslider/js/ion.rangeSlider.js', 
     'node_modules/jquery-form-styler/dist/jquery.formstyler.js',  
     'node_modules/counterup2/dist/index.js', 
-    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',   
+    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',    
+    'node_modules/isotope-layout/dist/isotope.pkgd.js',
     'app/js/main.js'
    ]) 
    .pipe(concat('main.min.js')) 

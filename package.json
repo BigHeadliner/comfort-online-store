@@ -30,6 +30,8 @@
     "@fancyapps/fancybox": "^3.5.7",
     "@fancyapps/ui": "^4.0.31",
     "counterup2": "^2.0.2",
+    "isotope-layout": "^3.0.6",
+    "masonry-layout": "^4.2.2",
     "save-dev": "^0.0.1-security"
   }
 }

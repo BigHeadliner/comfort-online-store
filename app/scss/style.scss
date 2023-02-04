@@ -117,7 +117,112 @@
 
    }
 
+} 
+ 
+ 
+.front{ 
+   background-image: url('../images/front-bg.jpg'); 
+   background-repeat: no-repeat; 
+   background-size: cover; 
+   background-position: center;    
+   margin-bottom: 95px;
+    
+  &__inner{ 
+    padding-top: 223px;
+  } 
+   
+  &__title{ 
+    max-width: 983px; 
+    margin-bottom: 18px;
+  }  
+   
+  &__subtitle{ 
+    color: #FFF;  
+    max-width: 830px; 
+    margin-bottom: 55px;
+  } 
+   
+  &__btn{ 
+    padding: 32px 52px; 
+    @extend %outfit-300; 
+    margin-bottom: 325px; 
+    text-transform: uppercase;   
+    font-size: 25px;
+    max-width: 443px;  
+    width: 100%; 
+  }
+
+}  
+ 
+.collection{ 
+     
+  &__item-title{ 
+   margin-top: auto;  
+   padding: 32px 0;  
+   @extend %outfit-300; 
+   font-size: 25px; 
+   text-transform: uppercase; 
+   background: #636A6A;  
+   color:#FFF;
+   text-align: center; 
+
+  } 
+     
+   &__items{ 
+      max-width: 1725px;
+      width: 100%; 
+      border: 1px solid transparent; 
+      margin: 0 auto 100px;
+   }
+
+  &__item1,
+  &__item2,
+  &__item3, 
+  &__item4, 
+  &__item5{ 
+    position: relative;   
+    display: block; 
+    width: 100%; 
+    max-width: 555px; 
+    height: 555px;  
+   
+  } 
+   
+
+  &__item1{ 
+   max-width: 1137px; 
+   height: 555px;  
+   background-image: url('../images/collection/collection-1.jpg');   
+   margin-right: 25px; 
+   margin-bottom: 25px;
+  }  
+   
+  &__item2{ 
+   background-image: url('../images/collection/collection-2.jpg');  
+  }  
+   
+  &__item3{ 
+   background-image: url('../images/collection/collection-3.jpg');   
+   margin-right: 25px;  
+  } 
+   
+  &__item4{ 
+   background-image: url('../images/collection/collection-4.jpg');    
+   margin-right: 25px; 
+  } 
+   
+  &__item5{ 
+   background-image: url('../images/collection/collection-5.jpg');   
+  }
+   
+  &__item-title{ 
+    position: absolute; 
+    bottom: 0; 
+    width: 100%; 
+    text-align: center;
+  }
 }
+
 
 .footer {
    background: #232323;
@@ -277,38 +382,7 @@
 } 
  
  
-.front{ 
-   background-image: url('../images/front-bg.jpg'); 
-   background-repeat: no-repeat; 
-   background-size: cover; 
-   background-position: center;   
-    
-  &__inner{ 
-    padding-top: 223px;
-  } 
-   
-  &__title{ 
-    max-width: 983px; 
-    margin-bottom: 18px;
-  }  
-   
-  &__subtitle{ 
-    color: #FFF;  
-    max-width: 830px; 
-    margin-bottom: 55px;
-  } 
-   
-  &__btn{ 
-    padding: 32px 52px; 
-    @extend %outfit-300; 
-    margin-bottom: 325px; 
-    text-transform: uppercase;   
-    font-size: 25px;
-    max-width: 443px;  
-    width: 100%; 
-  }
 
-}
 
 
 @import 'media';

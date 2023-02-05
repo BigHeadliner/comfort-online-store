@@ -338,6 +338,38 @@
    left: -23px;
   }
    
+} 
+ 
+.products{ 
+   background-image: url('../images/products/products-bg.jpg'); 
+   background-repeat: no-repeat; 
+   background-size: cover; 
+   background-position: center; 
+   text-align: center; 
+   padding-top: 109px; 
+    
+   &__decor{ 
+      margin: 0 auto 50px; 
+      color:#F5F3ED;
+   } 
+     
+   &__suptitle{ 
+      @extend %outfit-500;
+      font-size: 26px; 
+      margin-bottom: 15px;
+    } 
+    
+   &__title{ 
+      max-width: 1255px; 
+      margin: 0 auto 115px; 
+      @extend %outfit-400; 
+      font-size: 75px; 
+      line-height: 112px;
+   } 
+    
+   &__span{ 
+      @extend %outfit-600;
+   }
 }
 
 

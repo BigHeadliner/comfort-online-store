@@ -365,7 +365,7 @@
    background-color: transparent;
    cursor: pointer;
    position: absolute;
-   top: 50%;
+   top: 43%;
    transform: translateY(-50%);
    z-index: 5;
   } 
@@ -413,13 +413,15 @@
    }
 }
  
-.about-furniture {  
+.about-furniture {    
+   margin-bottom: 100px; 
+
    &__slider{ 
-      border: 1px solid fuchsia;
+      border: 1px solid transparent;
    } 
     
    &__item{ 
-      border: 1px solid royalblue; 
+      border: 1px solid transparent; 
       display: flex; 
       justify-content: space-between;
    }   
@@ -456,7 +458,7 @@
    } 
       
 
-   .about-furniture {
+   .about-furniture-arrow {
       border: none;
       width: 40px;
       height: 40px;
@@ -487,7 +489,84 @@
 
 }
  
+.find-us{  
 
+  &__title{ 
+   color:#545454; 
+   line-height: 83px; 
+   margin-bottom: 27px;
+  }  
+   
+  &__items{ 
+    border: 1px solid transparent; 
+    display: flex;
+  } 
+    
+  &__item{ 
+    height: 480px; 
+    max-width: 480px;  
+    width: 100%; 
+    overflow: hidden;  
+    cursor: pointer; 
+    position: relative; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+    &:hover{  
+      .find-us__details{ 
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        right: 0; 
+        bottom: 0;  
+      }
+    }
+  }   
+   
+   
+  &__details{
+   text-align: center;  
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); 
+   // height: 100%; 
+   display: flex; 
+   justify-content: center; 
+   align-items: center;   
+   position: absolute; 
+   top: -700px; 
+   transition: all .5s; 
+ }  
+   
+  
+    
+  &__details-btn{ 
+     padding: 30px 50px; 
+     border: 4px solid #FFF; 
+     @extend %outfit-300; 
+     font-size: 25px;  
+     text-transform: uppercase;  
+     display: inline-block;
+     margin: auto; 
+     color:#FFF; 
+  }
+   
+  &__item--1{ 
+   background-image: url('../images/find-us/item1-bg.jpg'); 
+  }  
+   
+  &__item--2{ 
+   background-image: url('../images/find-us/item2-bg.jpg'); 
+  }  
+   
+  &__item--3{ 
+   background-image: url('../images/find-us/item3-bg.jpg'); 
+  }   
+   
+  &__item--4{ 
+   background-image: url('../images/find-us/item4-bg.jpg'); 
+  } 
+   
+
+}
 
 .footer {
    background: #232323;

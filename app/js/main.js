@@ -16,15 +16,15 @@ $(function () {
 
    
      
-    var $slider = $('.about-furniture__slider');
+    let $slider = $('.about-furniture__slider');
 
     if ($slider.length) {
-      var currentSlide;
-      var slidesCount;
-      var sliderCounter = document.createElement('div');
+      let currentSlide;
+      let slidesCount;
+      let sliderCounter = document.createElement('div');
       sliderCounter.classList.add('about-furniture__counter');
       
-      var updateSliderCounter = function(slick, currentIndex) {
+      let updateSliderCounter = function(slick, currentIndex) {
         currentSlide = slick.slickCurrentSlide() + 1;
         slidesCount = slick.slideCount;
         $(sliderCounter).text(currentSlide +  '/'  +slidesCount)
@@ -40,8 +40,8 @@ $(function () {
       });
     
       $slider.slick({ 
-        prevArrow: '<button type="button" class="about-furniture about-furniture-prev"><img src="images/about-furniture/prev-arrow.svg" alt=""></button>',
-        nextArrow: '<button type="button" class="about-furniture about-furniture-next"><img src="images/about-furniture/next-arrow.svg" alt=""></button>',
+        prevArrow: '<button type="button" class="about-furniture-arrow about-furniture-prev"><img src="images/about-furniture/prev-arrow.svg" alt=""></button>',
+        nextArrow: '<button type="button" class="about-furniture-arrow about-furniture-next"><img src="images/about-furniture/next-arrow.svg" alt=""></button>',
         slidesToShow: 1,
         slidesToScroll: 1,
       });

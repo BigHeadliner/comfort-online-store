@@ -565,7 +565,66 @@
    background-image: url('../images/find-us/item4-bg.jpg'); 
   } 
    
+} 
+ 
+.help {
+   background-image: url('../images/how-can-we-help/help-bg.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover; 
+   padding-top: 130px;
 
+
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+   }
+
+   &__title {
+      margin-bottom: 10px;
+   }
+
+   &__subtitle {
+      color: #FFF;
+      max-width: 715px;
+      margin-bottom: 35px;
+   }
+
+   &__email {
+      color: #FFF;
+      margin-bottom: 105px;
+   } 
+    
+   &__btn-wrapper{ 
+      text-align: center;
+   }
+
+   &__btn {
+      padding: 24px 40px 24px 81px;
+      border: 1px solid transparent;
+      color: #232323;
+      position: relative;
+      margin: 0 auto 28px;
+      background-color: #FFF;
+      display: inline-block;
+
+      &::before {
+         content: '';
+         width: 32px;
+         height: 32px;
+         background-image: url('../images/how-can-we-help/help-btn-decor.svg');
+         position: absolute;
+         top: 22px;
+         left: 30px;
+      }
+   } 
+    
+   &__btn-subtitle{ 
+      margin-bottom: 97px; 
+      color: #FFF;
+   }
 }
 
 .footer {

@@ -27,8 +27,9 @@
 
    &__menu {
       position: relative;
-      border: 1px solid transparent;
-      overflow: hidden;
+      border: 1px solid transparent; 
+      display: flex;
+      // overflow: hidden;
 
       .logo {
          position: absolute;
@@ -45,7 +46,55 @@
       }
 
       .menu {
-         border: 1px solid transparent;
+         border: 1px solid transparent; 
+          
+         &__btn{ 
+            position: relative;
+            width: 50px;
+            height: 40px;
+            border: none;
+            padding: 0;
+            background-color: rgba(0,0,0,0);
+            transition: all .25s;    
+            cursor: pointer;
+            display: none; 
+            .row-top,
+            .row-middle,
+            .row-bottom {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 45px;
+                height: 3px;
+                background: #848484;
+                transform: rotate(0);
+                transition: all 0.5s;   
+            } 
+             
+            .row-middle {
+               transform: translateY(16px);
+           }
+   
+           .row-bottom {
+               transform: translateY(33px);
+           } 
+            
+         } 
+          
+         &__btn--open { 
+
+            .row-top {
+              transform: rotate(45deg) translateY(10px) translateX(13px);
+            }
+      
+            .row-middle {
+                display: none;
+            }
+               
+            .row-bottom {
+                 transform: rotate(-45deg) translateY(13px) translateX(-10px); 
+            }
+        }
 
          &__list {
             display: flex;
@@ -85,10 +134,23 @@
                color: #FFF;
                border-bottom: 1px solid #fff;
             }
+         } 
+          
+         &__link--active { 
+             color: #FFF;
          }
 
+        
+      } 
+       
+      .user-nav{ 
+         display: flex;  
+         align-items: center; 
+         margin-left: 30px;
+          
          &__link-basket {
-            position: relative;
+            position: relative; 
+            margin-right: 40px;
 
          }
 
@@ -112,7 +174,6 @@
          &__link-search-img {
             margin-top: 9px;
          }
-
       }
 
    }

@@ -29,7 +29,11 @@
      max-width: 1770px;
      margin: 0 auto;
      padding: 0 15px;
-     border: 1px solid green; 
-     border: 1px solid transparent; 
+     border: 1px solid fuchsia; 
+    // border: 1px solid transparent; 
      overflow: hidden;
+  } 
+   
+  .container--menu{ 
+    overflow: visible;
   }

@@ -242,11 +242,20 @@
   } 
      
    &__items{ 
-      max-width: 1725px;
+      max-width: 1725px; 
       width: 100%; 
-      border: 1px solid transparent; 
+      border: 1px solid green; 
       margin: 0 auto 100px;
-   }
+   } 
+    
+  &__item{ 
+     max-width: 555px;  
+     width: 100%; 
+     height: 555px;   
+     display: block;
+  } 
+   
+  
 
   &__item1,
   &__item2,
@@ -259,19 +268,22 @@
   &__item11{ 
     position: relative;   
     display: block; 
+    max-width: 555px;  
     width: 100%; 
-    max-width: 555px; 
     height: 555px;  
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    margin-bottom: 25px;
    
   } 
    
 
   &__item1{ 
-   max-width: 1137px; 
+   max-width: 1137px;   
+   width: 100%;
    height: 555px;  
    background-image: url('../images/collection/collection-1.jpg');   
-   margin-right: 25px; 
-   margin-bottom: 25px;
   }  
    
   &__item2{ 
@@ -280,12 +292,10 @@
    
   &__item3{ 
    background-image: url('../images/collection/collection-3.jpg');   
-   margin-right: 25px;  
   } 
    
   &__item4{ 
    background-image: url('../images/collection/collection-4.jpg');    
-   margin-right: 25px; 
   } 
    
   &__item5{ 

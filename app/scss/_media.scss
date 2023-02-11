@@ -99,6 +99,12 @@
     .header__menu .user-nav {
         order: 2;
         margin-left: auto;
+    } 
+      
+    // front
+     
+    .front {
+        margin-bottom: 75px; 
     }
 
 }
@@ -260,7 +266,13 @@
         margin-bottom: 173px;
         font-size: 21px;
         max-width: 270px; 
-    }
+    } 
+      
+    // front
+     
+    .front {
+        margin-bottom: 65px;
+    } 
 
 }  
  
@@ -335,6 +347,12 @@
         margin-bottom: 157px;
         font-size: 19px;
         max-width: 255px;
+    }  
+     
+    // font
+     
+    .front {
+        margin-bottom: 38px;
     }
 
 }  
@@ -452,11 +470,34 @@
         padding: 21px 34px;
         margin-bottom: 73px; 
         font-size: 18px;
+    } 
+     
+     // collection    
+
+    .collection__item1,  
+    .collection__item2,  
+    .collection__item3,  
+    .collection__item4,  
+    .collection__item5,  
+    .collection__item6,  
+    .collection__item7,  
+    .collection__item8,  
+    .collection__item9,  
+    .collection__item10,  
+    .collection__item11 {
+        max-width: 100%;
+        height: 330px;  
     }
 
 } 
  
-@media(max-width: 400px) {     
+@media(max-width: 400px) {       
+     
+    // front
+     
+    .front {
+        margin-bottom: 25px;
+    }
      
      // global 
       
@@ -475,10 +516,27 @@
         max-width: 307px;
         width: 100%;
         padding: 20px 33px; 
-    }
+    } 
      
+     
+      // collection    
 
-
+      .collection__item1,  
+      .collection__item2,  
+      .collection__item3,  
+      .collection__item4,  
+      .collection__item5,  
+      .collection__item6,  
+      .collection__item7,  
+      .collection__item8,  
+      .collection__item9,  
+      .collection__item10,  
+      .collection__item11 {
+          max-width: 100%;
+          height: 315px;   
+          margin-bottom: 15px;
+      }
+ 
 } 
  
 @media(max-width: 370px) {
@@ -487,7 +545,25 @@
 
     .header__menu .logo-text {
         font-size: 30px;
-    }
+    } 
+     
+     // collection    
+
+     .collection__item1,  
+     .collection__item2,  
+     .collection__item3,  
+     .collection__item4,  
+     .collection__item5,  
+     .collection__item6,  
+     .collection__item7,  
+     .collection__item8,  
+     .collection__item9,  
+     .collection__item10,  
+     .collection__item11 {
+         max-width: 100%;
+         height: 300px;   
+         margin-bottom: 10px;
+     }
 
 } 
  
@@ -509,6 +585,25 @@
     .front__btn {
         max-width: 287px;
         width: 100%; 
-    }
+    } 
+     
+    // collection    
+
+    .collection__item1,  
+    .collection__item2,  
+    .collection__item3,  
+    .collection__item4,  
+    .collection__item5,  
+    .collection__item6,  
+    .collection__item7,  
+    .collection__item8,  
+    .collection__item9,  
+    .collection__item10,  
+    .collection__item11 {
+        max-width: 100%;
+        height: 300px;   
+        margin-bottom: 15px;
+    } 
+
 
 }

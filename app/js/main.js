@@ -22,7 +22,44 @@ $(function () {
     prevArrow: '<button type="button" class="slick-prev"><img src="images/ship/prev.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="images/ship/next.svg" alt=""></button>',
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 1, 
+    responsive: [
+      {
+        breakpoint: 1828,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },  
+       
+      {
+        breakpoint: 1215,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },  
+        
+      {
+        breakpoint: 874,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },  
+       
+      {
+        breakpoint: 431,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1, 
+          arrows: false, 
+          autoplay: true,  
+          dots: true,
+        }
+      }, 
+    ] 
+
   })
 
 

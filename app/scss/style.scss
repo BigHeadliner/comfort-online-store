@@ -388,7 +388,11 @@
   &__slider-wrapper{ 
    border: 1px solid transparent; 
    margin-bottom: 135px;
-  } 
+  }  
+   
+  &__slider{ 
+   position: relative;
+  }
    
   &__slider-item{ 
    border: 1px solid transparent; 

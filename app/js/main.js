@@ -28,7 +28,8 @@ $(function () {
         breakpoint: 1828,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
+          slidesToScroll: 1, 
+          autoplay: false,  
         }
       },  
        

@@ -241,10 +241,11 @@
 
   } 
      
-   &__items{ 
+   &__items, 
+   &__items-1{ 
       max-width: 1725px; 
       width: 100%; 
-      border: 1px solid green; 
+      border: 1px solid transparent; 
       margin: 0 auto 100px;
    } 
     
@@ -261,7 +262,8 @@
   &__item2,
   &__item3, 
   &__item4, 
-  &__item5, 
+  &__item5,  
+  &__item7, 
   &__item8, 
   &__item9, 
   &__item10,  
@@ -275,7 +277,6 @@
     background-size: cover; 
     background-repeat: no-repeat; 
     margin-bottom: 25px;
-   
   } 
    
 

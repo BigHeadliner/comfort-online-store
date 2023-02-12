@@ -37,7 +37,8 @@ $(function () {
         breakpoint: 1215,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToScroll: 1, 
+          autoplay: false,  
         }
       },  
         
@@ -45,12 +46,25 @@ $(function () {
         breakpoint: 874,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToScroll: 1, 
+          autoplay: false,  
         }
       },  
        
       {
         breakpoint: 431,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1, 
+          arrows: false,   
+          dots: true, 
+          fade:true, 
+          autoplay: false, 
+        }
+      },  
+       
+      {
+        breakpoint: 321,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1, 
@@ -114,7 +128,18 @@ $(function () {
     layoutMode: 'fitRows',
     fitRows: {
       gutter: 25
-    }
+    } 
+      
+    });
+     
+    var elem = document.querySelector('.collection__items-1');
+    var iso = new Isotope(elem, {
+      // options
+      itemSelector: '.collection__item',
+      layoutMode: 'fitRows',
+      fitRows: {
+        gutter: 25
+      }
 
 
   });

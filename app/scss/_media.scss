@@ -55,7 +55,8 @@
 
     // collection
 
-    .collection__items {
+    .collection__items, 
+    .collection__items-1 {
         max-width: 1143px;
     }
 
@@ -78,6 +79,12 @@
      
     .ship .slick-next {
         right: 19px;
+    } 
+      
+    // collection 
+
+    .collection__title {
+        margin: 73px 0 17px;
     }
 
 }
@@ -255,7 +262,8 @@
 
     //  collection 
       
-    .collection__items {
+    .collection__items, 
+    .collection__items-1 {
         max-width: 940px;
     }
 
@@ -334,7 +342,8 @@
      
     //  collection 
        
-    .collection__items {
+    .collection__items, 
+    .collection__items-1 {
         max-width: 830px; 
         margin: 0 auto 50px;
     }
@@ -464,6 +473,12 @@
      
     .ship__price {
         margin-bottom: 31px;
+    } 
+      
+    //  collection
+     
+    .collection__title {
+        margin: 64px 0 17px;
     }
 
 }
@@ -526,7 +541,13 @@
       
     .header__top {
         padding: 5px 0;  
-    }  
+    }   
+       
+    // collection
+     
+    .collection__title {
+        margin: 50px 0 17px;
+    }
 
 } 
  
@@ -566,7 +587,20 @@
         margin: 0px auto 65px;
         font-size: 37px;
         line-height: 67px;
-    }
+    } 
+      
+    // collection 
+
+    .collection__title {
+        margin: 39px 0 17px;
+    } 
+     
+    .collection__subtitle {
+        font-size: 20px; 
+        line-height: 34px;
+        margin-bottom: 29px; 
+    } 
+
 }  
 
  
@@ -657,6 +691,13 @@
 
     .header .menu .menu__list.menu__list--active {
         transform: translateY(1px);
+    }  
+     
+    // collection
+     
+    .collection__title {
+        margin: 30px 0 17px; 
+        line-height: 43px;
     }
 
 } 
@@ -839,7 +880,39 @@
         line-height: 65px;
     }
 
-} 
+}  
+ 
+@media(max-width: 345px) {
+
+    // ship 
+
+    .ship__price {
+        margin-bottom: 10px;
+    }
+
+    .ship .ship__slider-img--armchair {
+        margin: 0 auto;
+    }
+
+    .ship .ship__slider-img--sectional {
+        margin: 0px auto 9px
+    }
+
+    .ship__slider-img--sofa {
+        margin: 27px auto 15px;
+    }
+
+    .ship .ship__slider-img--chair {
+        margin: 25px auto 35px;
+    }
+
+    .ship .slick-dots {
+        position: absolute;
+        bottom: -58px;
+    }
+
+}
+
  
 @media(max-width: 320px) {
 

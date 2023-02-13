@@ -58,9 +58,33 @@
     .collection__items, 
     .collection__items-1 {
         max-width: 1143px;
-    }
+    } 
+     
+    // footer 
+     
+    .footer__top-office, 
+    .footer__top-product, 
+    .footer__top-help, 
+    .footer__top-join{ 
+       border: 1px solid green;
+    }  
 
 } 
+ 
+@media(max-width: 1700px) {    
+     
+    // footer 
+     
+    .footer__top{ 
+        justify-content: space-between;
+    }
+
+    .footer__top-office {
+        margin-right: 0;
+    }  
+
+
+}
  
 @media(max-width: 1617px) { 
       
@@ -330,7 +354,25 @@
 
      .about-furniture {
         margin-bottom: 75px;
+    }   
+     
+    // footer
+     
+    .footer {
+        padding-top: 100px;
     } 
+     
+    .footer__top{ 
+        flex-wrap: wrap; 
+        justify-content: center;
+    } 
+     
+    .footer__top-office,  
+    .footer__top-product,  
+    .footer__top-help,  
+    .footer__top-join { 
+        margin: 15px;
+    }
 
  } 
  
@@ -400,9 +442,25 @@
      
     .find-us__title{ 
         text-align: center;
+    } 
+      
+    // footer 
+
+    .footer {
+        padding-top: 30px;
     }
 
-}  
+}   
+ 
+@media(max-width: 1240px) {
+
+    // footer 
+
+    .footer {
+        padding-top: 0;
+    }
+
+}
   
  
 @media(max-width:1170px) {
@@ -800,7 +858,47 @@
 
     .help__btn {
         padding: 18px 32px 18px 70px; 
+    } 
+      
+    // footer 
+
+    .footer__top {
+        border-top: 1px solid #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: hidden;
+        margin-bottom: 37px;
+        padding-top: 35px; 
     }
+} 
+ 
+@media(max-width: 800px) {   
+       
+    // footer  
+     
+  .footer__top{ 
+    margin-bottom: 23px;
+  }
+
+  .footer__bottom-wrapper { 
+    flex-wrap: wrap;
+  } 
+    
+  .footer__bottom-menu, 
+  .footer__bottom-social{ 
+    margin: 15px;
+  }   
+   
+  .footer__bottom-social{ 
+    order:1;
+  } 
+   
+  .footer__bottom-menu{ 
+    order: 2; 
+    margin-bottom: 35px;  
+  }
+
 
 }
  
@@ -905,6 +1003,12 @@
      
     .help__subtitle {
         margin-bottom: 35px;
+    } 
+      
+    // footer 
+
+    .footer__bottom-menu-item { 
+        font-size: 20px;
     }
 
 }
@@ -964,9 +1068,19 @@
     .about-furniture__img{ 
         height: 455px;
     }
+ 
+ }  
+ 
+ 
+@media(max-width:530px) {
 
-}  
+    // footer 
 
+    .footer__bottom-menu-item {
+        font-size: 16px;
+    }
+
+}
  
 @media(max-width: 500px) {
 
@@ -1044,6 +1158,22 @@
     .find-us__details-btn {
         padding: 9px 9px; 
         font-size: 20px;
+    } 
+      
+    // footer 
+
+    .footer__top-text{ 
+        font-size: 16px; 
+        line-height: 30px;
+    } 
+     
+    .footer__top-join{ 
+        position: relative;
+    } 
+     
+    .footer__top-title{ 
+        position: absolute; 
+        top:25px;
     }
     
  } 

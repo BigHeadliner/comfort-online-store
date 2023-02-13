@@ -257,6 +257,12 @@
      
     .about-furniture__paragraph {
         margin: 0 auto 21px;
+    } 
+      
+    // help 
+
+    .help{
+        padding-top: 105px;
     }
 
 } 
@@ -389,7 +395,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center; 
-        border: 1px solid green;
+        border: 1px solid transparent;
     } 
      
     .find-us__title{ 
@@ -451,8 +457,60 @@
 
     .collection__items-1 {
         margin: 0 auto 33px;
+    }  
+     
+    // help
+     
+    .help {
+        padding-top: 95px;
+    } 
+     
+    .help__title{ 
+        font-size: 65px; 
+        margin-bottom: 7px;
+    }  
+     
+    .help__subtitle{ 
+        font-size: 23px; 
+        line-height: 38px; 
+        margin-bottom: 19px;
     }
   
+} 
+ 
+@media(max-width: 1090px) {     
+
+    //  help 
+
+    .help {
+        padding-top: 85px;
+    }    
+     
+    .help__inner{ 
+        display: block;
+    }
+     
+    .help__content-wrapper{ 
+        text-align: center;
+        border: 1px solid transparent;
+        max-width: 700px;
+        margin: 0 auto; 
+    } 
+     
+    .help__subtitle {
+        font-size: 23px;
+        line-height: 38px;
+        margin-bottom: 19px;
+    } 
+     
+    .help__email {
+        margin-bottom: 70px;
+    } 
+     
+    .help__btn-subtitle {
+        margin-bottom: 77px;
+    }
+     
 }
  
  
@@ -505,6 +563,16 @@
     .find-us__item{ 
         max-width: 700px; 
         margin-bottom: 10px;
+    } 
+      
+    // help
+     
+    .help__email {
+        margin-bottom: 50px;
+    } 
+     
+    .help__btn-subtitle {
+        margin-bottom: 54px;
     }
 
 } 
@@ -714,6 +782,24 @@
      
     .about-furniture__rating-title {
         font-size: 23px;
+    } 
+      
+    // help
+
+    .help {
+        padding-top: 75px;
+    } 
+     
+    .help__email {
+        margin-bottom: 40px;
+    } 
+     
+    .help__btn-subtitle {
+        margin-bottom: 45px;
+    } 
+
+    .help__btn {
+        padding: 18px 32px 18px 70px; 
     }
 
 }
@@ -791,7 +877,37 @@
     }
 
 }  
+  
+@media(max-width: 715px) {
+
+    // help
+
+    .help__email {
+        display: none;
+    }
+
+    .help__title {
+        font-size: 65px;
+        margin-bottom: 17px;
+    }
+
+    .help__subtitle {
+        font-size: 20px;
+        line-height: 35px;
+        margin-bottom: 45px;
+    }
+
+}  
  
+@media(max-width: 650px) {      
+     
+    //  help
+     
+    .help__subtitle {
+        margin-bottom: 35px;
+    }
+
+}
  
 @media(max-width: 595px) {   
      
@@ -1108,6 +1224,42 @@
     .find-us__title{ 
        font-size: 35px;
        line-height: 40px;  
+    } 
+     
+    // help 
+     
+    .help{ 
+        padding-top: 95px;
+    }   
+     
+    .help__title{ 
+        font-size: 30px; 
+        line-height: 38px; 
+        margin-bottom: 10px;
+    } 
+     
+    .help__subtitle{
+        font-size: 17px;
+        line-height: 25px;
+        margin-bottom: 17px;
+    } 
+     
+    .help__btn{ 
+        padding: 14px 32px 14px 40px; 
+        font-size: 25px; 
+        margin-bottom: 53px;
+    }   
+     
+    .help__btn::before {
+        position: absolute;
+        top: 22px;
+        left: 7px;
+    }
+     
+    .help__btn-subtitle{ 
+        font-size: 22px; 
+        line-height: 27px; 
+        margin-bottom: 95px;
     }
 
 
@@ -1218,6 +1370,26 @@
      
     .about-furniture__rating{ 
         justify-content: space-around;
+    }  
+     
+    // help
+     
+    .help {
+        padding-top: 75px; 
+    } 
+     
+    .help__subtitle {
+        font-size: 17px;
+        line-height: 25px;
+        margin-bottom: 17px;
+    } 
+     
+    .help__btn {
+        margin-bottom: 35px;
+    } 
+     
+    .help__btn-subtitle{ 
+        margin-bottom: 54px;
     }
 
 }  
@@ -1268,6 +1440,16 @@
      
     .about-furniture__text {
         padding-top: 10px;
+    } 
+      
+    // help 
+
+    .help {
+        padding-top: 54px;
+    }  
+
+    .help__btn-subtitle {
+        margin-bottom: 34px;
     }
 
 }

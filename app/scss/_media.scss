@@ -66,7 +66,7 @@
     .footer__top-product, 
     .footer__top-help, 
     .footer__top-join{ 
-       border: 1px solid green;
+       border: 1px solid transparent;
     }  
 
 } 
@@ -448,6 +448,10 @@
 
     .footer {
         padding-top: 30px;
+    }  
+     
+    .footer__top {
+        border-top: 1px solid transparent; 
     }
 
 }   
@@ -863,9 +867,7 @@
     // footer 
 
     .footer__top {
-        border-top: 1px solid #fff;
-        display: -webkit-box;
-        display: -ms-flexbox;
+        border-top: 1px solid transparent;
         display: flex;
         overflow: hidden;
         margin-bottom: 37px;
@@ -993,6 +995,17 @@
         font-size: 20px;
         line-height: 35px;
         margin-bottom: 45px;
+    }   
+     
+    // footer
+     
+    .footer__top-join{ 
+        position: relative; 
+    } 
+     
+    .footer__top-title--join{ 
+        position: absolute; 
+        top:17px;
     }
 
 }  
@@ -1072,7 +1085,11 @@
  }  
  
  
-@media(max-width:530px) {
+@media(max-width:530px) { 
+     
+    .header__menu {
+        padding-bottom: 25px;
+    }
 
     // footer 
 
@@ -1100,11 +1117,12 @@
      
     .header__top {
         padding: 14px 0;
-    } 
+    }  
      
-    .header__top-text {
+    .header__top-text{ 
         margin: 1px;
     }
+
 
     // front 
 
@@ -1169,13 +1187,13 @@
      
     .footer__top-join{ 
         position: relative;
-    } 
+    }  
      
-    .footer__top-title{ 
+    .footer__top-title--join{ 
         position: absolute; 
-        top:25px;
+        top: 25px;
     }
-    
+     
  } 
  
 @media(max-width: 470px) {
@@ -1216,6 +1234,13 @@
         min-width: 197px;
         margin-bottom: 0; 
         height: 233px;
+    }  
+     
+    // footer
+     
+    .footer__top-input{ 
+      padding: 0 10px; 
+      margin-right: 0;
     }
 
 } 
@@ -1333,6 +1358,54 @@
     .about-furniture__paragraph {
         font-size: 17px;
         line-height: 33px;
+    } 
+      
+    // footer 
+
+    .footer__top{ 
+        justify-content: start;
+    } 
+     
+    .footer__top-address--last {
+        margin-bottom: 10px; 
+    } 
+      
+    .footer__top-contact--email{ 
+        margin-bottom: 25px;
+    } 
+     
+    .footer__top-title--help{ 
+        font-size: 23px;
+    }  
+     
+    .footer__top-help-item{ 
+        font-size: 20px;
+    } 
+     
+    .footer__top-title--join{ 
+        font-size: 30px;    
+        position: absolute;
+        top: 15px;   
+    } 
+     
+    .footer__top-form {
+        margin: 65px 0 29px;
+    }
+
+    .footer__top-office, 
+    .footer__top-product, 
+    .footer__top-help, 
+    .footer__top-join{  
+        max-width: 384px;
+        width: 100%; 
+        padding-bottom: 8px; 
+        border-bottom: 2px solid #FFF; 
+        margin: 0; 
+        margin-bottom: 33px;
+    } 
+     
+    .footer__top-join{   
+       padding-bottom: 45px;
     }
 
 } 
@@ -1390,8 +1463,52 @@
         font-size: 22px; 
         line-height: 27px; 
         margin-bottom: 95px;
-    }
+    } 
+     
+    .footer__bottom-menu{ 
+        display: none;
+    } 
+      
+    // footer 
 
+    .footer__top {
+        margin-bottom: 0;
+    } 
+     
+    .footer__top-join{ 
+        margin-bottom: 25px;
+    } 
+     
+    .footer__bottom-social{ 
+        margin: 15px 15px 25px 15px;
+    }
+  
+
+} 
+ 
+@media(max-width: 410px) {    
+     
+    // footer
+     
+    .footer__top-form-inner{ 
+        position: relative; 
+        height: 67px;
+    }     
+
+    .footer__top-btn{ 
+        position: absolute; 
+        right: 0;
+    } 
+     
+    .footer__top-title--join {
+        font-size: 30px;
+        position: absolute;
+        top: 0px;
+    } 
+     
+    .footer__bottom-payment{ 
+        margin-bottom: 37px;
+    }
 
 }
  
@@ -1580,6 +1697,17 @@
 
     .help__btn-subtitle {
         margin-bottom: 34px;
+    }   
+     
+    // footer
+     
+    .footer__bottom-payment-item{ 
+        width: 65px; 
+        height: 65px;
+    } 
+     
+    .footer__top-title--join {
+        font-size: 27px; 
     }
 
 }
@@ -1669,6 +1797,13 @@
     .find-us__title {
         font-size: 34px;
         line-height: 47px;
-    }
+    }  
+
+    // footer   
+
+    .footer__top-input{ 
+        padding: 0 70px 0 10px; 
+        margin-right: 0; 
+      }
 
 }

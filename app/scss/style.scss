@@ -785,7 +785,8 @@
    &__top-help-item {
       margin-bottom: 20px;
       font-size: 25px;
-      @extend %hkgrotesk-500;
+      @extend %hkgrotesk-500; 
+      cursor: pointer;
    }
 
    &__top-join {
@@ -808,7 +809,8 @@
       @extend %hkgrotesk-400;
       margin-right: 28px;
       padding: 0 10px;
-      color: #FFF;
+      color: #FFF; 
+      overflow: hidden;
    }
 
    &__top-btn {
@@ -818,7 +820,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 1px solid transparent;
+      border: 1px solid transparent; 
+      cursor: pointer;
    }
 
    &__top-text {
@@ -840,6 +843,14 @@
       max-width: 570px;
       width: 100%;
       margin-bottom: 35px;
+   } 
+    
+   &__bottom-menu-item{ 
+      cursor: pointer;
+   } 
+    
+   &__bottom-menu-link{ 
+      color: #FFF;
    }
 
    &__bottom-social {

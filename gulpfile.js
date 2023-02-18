@@ -16,7 +16,7 @@ function browsersync() {
   browserSync.init({ 
     server:{ 
       baseDir: 'app/', 
-      index: "homepage.html"
+      index: "product.html"
     }, 
     notify: false
   })

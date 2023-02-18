@@ -22,61 +22,60 @@ $(function () {
     prevArrow: '<button type="button" class="slick-prev"><img src="images/ship/prev.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="images/ship/next.svg" alt=""></button>',
     slidesToShow: 4,
-    slidesToScroll: 1, 
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1828,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1, 
-          autoplay: false,  
+          slidesToScroll: 1,
+          autoplay: false,
         }
-      },  
-       
+      },
+
       {
         breakpoint: 1215,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1, 
-          autoplay: false,  
+          slidesToScroll: 1,
+          autoplay: false,
         }
-      },  
-        
+      },
+
       {
         breakpoint: 874,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1, 
-          autoplay: false,  
+          slidesToScroll: 1,
+          autoplay: false,
         }
-      },  
-       
+      },
+
       {
         breakpoint: 431,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1, 
-          arrows: false,   
-          dots: true, 
-          fade:true, 
-          autoplay: false, 
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true,
+          fade:true,
+          autoplay: false,
         }
-      },  
-       
+      },
+
       {
         breakpoint: 321,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1, 
-          arrows: false, 
-          autoplay: true,  
+          slidesToScroll: 1,
+          arrows: false,
+          autoplay: true,
           dots: true,
         }
-      }, 
-    ] 
+      },
+    ]
 
   })
-
 
 
   let $slider = $('.about-furniture__slider');
@@ -111,7 +110,6 @@ $(function () {
   }
 
 
-
   $(".about-furniture__stars").rateYo({
     starWidth: "37px",
     normalFill: "#ccccce",
@@ -128,10 +126,10 @@ $(function () {
     layoutMode: 'fitRows',
     fitRows: {
       gutter: 25
-    } 
-      
+    }
+
     });
-     
+
     var elem = document.querySelector('.collection__items-1');
     var iso = new Isotope(elem, {
       // options
@@ -141,11 +139,33 @@ $(function () {
         gutter: 25
       }
 
+  });
 
-  }); 
-   
-  $('.footer__top-btn').on('click', function(e){ 
+
+  $('.footer__top-btn').on('click', function(e){
     e.preventDefault();
-  })   
+  })
+
+  $('.product-one__slider-big').slick({
+     asNavFor: '.product-one__slider-nav',
+     arrows: false,
+     draggable: false,
+  });
+ 
+ 
+  
+   
+
+  $('.product-one__slider-nav').slick({
+    nextArrow: '<button type="button" class="slick-btn slick-next"><img src="images/product-new-page/slider/next.svg" alt="next arrow"></button>',
+    prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="images/product-new-page/slider/prev.svg" alt="prev arrow"></button>',
+    asNavFor: '.product-one__slider-big',
+    focusOnSelect: true,
+    slidesToScroll: 1,
+    draggable: false, 
+    variableWidth: true, 
+    slidesToShow: 5, 
+  });
+
 
 });

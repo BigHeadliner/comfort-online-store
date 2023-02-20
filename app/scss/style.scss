@@ -871,10 +871,14 @@
     
 }   
  
- //  PRODUCT-PAGE 
+ //  PRODUCT-PAGE  
+  
+ .product{ 
+   margin-bottom: 107px;
+ }
     
  .product-one {
-    border: 1px solid green;   
+    border: 1px solid transparent;   
     display: flex; 
     margin-top: 90px;
 
@@ -926,7 +930,7 @@
     } 
      
     &__dashbord{ 
-      border: 1px solid orange;
+      border: 1px solid transparent;
     } 
      
     &__title{ 
@@ -1168,8 +1172,31 @@
     
    &__content.product-one__content--active{ 
       display: block;
+   } 
+
+ } 
+  
+ .alumin-furniture{   
+    
+   &__inner{ 
+     display: flex;  
+     align-items: center;
    }
- 
+
+   &__content{ 
+      max-width: 757px;
+   } 
+    
+   &__img{ 
+      margin-right: 100px;
+   } 
+    
+   &__title{ 
+      @extend %outfit-400; 
+      font-size: 65px; 
+      margin-bottom: 53px;
+   }
+
  }
  
  

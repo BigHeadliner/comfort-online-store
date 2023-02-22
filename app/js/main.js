@@ -184,8 +184,15 @@ $(function () {
 
     $('.product-one__content').removeClass('product-one__content--active');
     $($(this).attr('href')).addClass('product-one__content--active'); 
-  });
+  });  
+    
 
 
-
+   $('.faq__question-top').on('click', function (){  
+     $(this).next('.faq__question-content').slideToggle();
+     $(this).children('.faq__decor-arrow').toggleClass('faq__decor-arrow--rotate'); 
+   })    
+    
+   $('.faq__question-content').hide(); 
+       
 });

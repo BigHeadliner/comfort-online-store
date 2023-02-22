@@ -1177,7 +1177,8 @@
  } 
   
  .alumin-furniture{   
-    
+   margin-bottom: 100px;  
+   
    &__inner{ 
      display: flex;  
      align-items: center;
@@ -1195,6 +1196,63 @@
       @extend %outfit-400; 
       font-size: 65px; 
       margin-bottom: 53px;
+   }
+
+ } 
+  
+ .faq{ 
+    margin-bottom: 100px; 
+   &__title{ 
+     @extend %outfit-300; 
+     font-size: 55px; 
+     color: #000; 
+     margin-bottom: 31px;
+   }
+
+   &__questions{ 
+      max-width: 1721px; 
+      border: 1px solid transparent; 
+      margin: 0 auto;
+   }   
+    
+   &__question{ 
+     border-top: 1px solid #BEBFBE; 
+   }  
+    
+   &__question--border{  
+      border-bottom: 1px solid #BEBFBE;   
+   }
+    
+   &__question-top{ 
+      margin-top: 39px; 
+      margin-bottom: 37px; 
+      display: flex; 
+      justify-content: space-between;  
+      align-items: center;
+      padding-right: 38px;
+   }  
+    
+   &__question-title{ 
+      color: #272727; 
+   }
+     
+  &__decor-arrow{ 
+      cursor:pointer; 
+      width: 40px; 
+      height: 40px;
+   }   
+     
+   &__decor-arrow.faq__decor-arrow--rotate{ 
+      transform: rotate(180deg); 
+   }
+    
+   &__question-content{ 
+      max-width: 1635px; 
+      margin-top: 10px; 
+   } 
+    
+   &__question-text{ 
+      margin-bottom: 50px;
    }
 
  }

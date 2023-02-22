@@ -1257,7 +1257,44 @@
 
  }
  
- 
+ .shop-sets{  
+   text-align: center;
+   &__title{ 
+      color:#272727; 
+      margin-bottom: 70px;
+   }
+ } 
+  
+ .shop-cards{ 
+   display: flex; 
+   justify-content: space-between; 
+   border: 1px solid transparent;  
+   margin-bottom: 100px;
+ } 
+  
+ .shop-card{ 
+    max-width: 393px; 
+    width: 100%; 
+    text-align: left; 
+     
+   &__img{ 
+      margin-bottom: 21px;
+   } 
+    
+   &__subtitle{ 
+      margin-bottom: 10px;
+   }  
+    
+   &__price{ 
+      margin-bottom: 23px;
+   }
+    
+   &__btn{  
+      padding: 14px 138px 14px 157px; 
+      @extend %hkgrotesk-400; 
+      font-size: 25px;
+   }
+ }
 
 
 

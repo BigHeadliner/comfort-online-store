@@ -1296,6 +1296,79 @@
    }
  }
 
+  .reviews {
 
+     &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+     }
+
+     &__title {
+        font-size: 55px;
+        color: #1D1F1F;
+        @extend %outfit-300;
+     }
+
+     &__btn {
+        border: 1px solid transparent;
+        padding: 32px 33px 31px 38px;
+        background: #3A5040;
+        color: #FFF;
+     }
+
+     &__comments {
+        max-width: 1473px;
+     }
+
+     &__comment {
+        border: 1px solid transparent; 
+        display: flex; 
+        justify-content: space-between; 
+        margin-bottom: 115px;
+     }
+
+     &__author-name {
+        font-size: 25px;
+        @extend %hkgrotesk-400;
+        margin-bottom: 23px;
+
+     }
+
+     &__verified-wrapper {
+        position: relative; 
+        max-width: 190px; 
+        margin-bottom: 10px;
+
+        &::after {
+           content: '';
+           width: 37px;
+           height: 37px;
+           background-image: url('../images/product-new-page/verifie-decor.svg');
+           background-repeat: no-repeat;
+           position: absolute;
+           top: -9px;
+           right: -14px;
+        } 
+         
+        jq-ry-container { 
+         padding: 0 ; 
+      }
+     } 
+      
+    &__content{ 
+       max-width: 837px; 
+    } 
+     
+   &__content-title, 
+   &__date-month{ 
+      @extend  %hkgrotesk-400; 
+      font-size: 25px; 
+      color: $main-text-color; 
+      margin-bottom: 23px;
+   }
+
+  }
 
 @import 'media';

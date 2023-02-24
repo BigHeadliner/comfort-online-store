@@ -1367,8 +1367,44 @@
       font-size: 25px; 
       color: $main-text-color; 
       margin-bottom: 23px;
+   } 
+    
+   &__comment--final{ 
+      margin-bottom: 97px;
+   } 
+    
+   &__nav{  
+      display: flex;  
+      justify-content: space-between;
+      border: 1px solid transparent; 
+      align-items: center;  
+      margin: 0 auto 70px; 
+      max-width: 497px;
+   }  
+    
+   &__nav-item{ 
+      width: 77px;  
+      height: 77px;  
+      border-radius: 7px; 
+      border: 1px solid #545454; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center;
+   } 
+    
+   &__nav-link{  
+      color:#000;
+   }  
+    
+   &__nav-item--active{ 
+      background-color: $main-btn-color;
+   } 
+    
+   &__nav-link--active{ 
+      color: #FFF;
    }
-
+    
+   
   }
 
 @import 'media';

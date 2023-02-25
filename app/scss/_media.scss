@@ -90,7 +90,7 @@
     } 
      
     .product-one__delivery{ 
-        margin: 0 auto 40px;
+        margin: 0 auto 90px;
     } 
      
     .product-one__tabs-wrapper{ 
@@ -276,7 +276,15 @@
   
  .alumin-furniture__title {
     margin-bottom: 33px;
-} 
+}  
+ 
+ // faq
+ 
+ .faq__title {
+   text-align: center;
+    color: #000;
+    margin-bottom: 65px;
+ } 
 
 }
 
@@ -549,7 +557,7 @@
      // product-one
      
     .product-one__delivery {
-        margin: 0 auto 50px;
+        margin: 0 auto 70px;
     }
 
     // footer 
@@ -890,6 +898,12 @@
      
     .slick-dots .slick-active button {
         background: #000;
+    } 
+      
+    // faq 
+
+    .faq__question-text {
+        margin-bottom: 40px;
     }
 
 
@@ -1055,7 +1069,13 @@
   
  .alumin-furniture__title {
     font-size: 47px;
- } 
+ }  
+   
+//   faq
+
+ .faq__title{ 
+    font-size: 47px;
+ }
 
 
 }
@@ -1187,6 +1207,10 @@
     .product-one__title{ 
         line-height: 50px; 
         font-size: 47px;
+    } 
+     
+    .product-one__delivery {
+        margin: 0 auto 50px;
     }
 
       
@@ -1194,6 +1218,16 @@
 
     .footer__bottom-menu-item { 
         font-size: 20px;
+    }
+
+} 
+ 
+@media(max-width:610px) {
+
+    // faq
+
+    .faq__question-title {
+        font-size: 19px;
     }
 
 }
@@ -1268,10 +1302,39 @@
     .product-one__stat{ 
         font-size: 20px;
     } 
+       
+    // faq 
+
+    .faq__title { 
+        margin-bottom: 45px; 
+    } 
      
-    
- }  
+    .faq__question-top {
+        margin-top: 29px;
+        margin-bottom: 27px; 
+    }
  
+ }  
+  
+ @media(max-width:570px) { 
+     
+    // faq 
+
+    .faq__title { 
+        line-height: 50px;
+    }  
+     
+    .faq__question-title{ 
+        font-size: 17px;
+    } 
+     
+    .faq__question-text {
+        margin-bottom: 25px; 
+        font-size: 20px;
+    } 
+      
+ }
+
  
 @media(max-width:530px) { 
      
@@ -1311,7 +1374,13 @@
         font-size: 20px;
         line-height: 34px;
         margin-bottom: 30px;
-    }  
+    }   
+     
+    // faq  
+
+    .faq__question-title {
+        font-size: 15px;
+    }
     
 }
  
@@ -1429,6 +1498,12 @@
      
     .alumin-furniture__title {
         margin-bottom: 23px; 
+    } 
+      
+    // faq 
+
+    .faq__question-top {
+        padding-right: 15px;
     }
       
     // footer 
@@ -1562,6 +1637,12 @@
     .product-one__colors-title,
     .product-one__colors-items{ 
        display: none;
+    } 
+ 
+    // faq 
+
+    .faq__question-top {
+        padding-right: 3px;
     }
 
 }  
@@ -1746,7 +1827,13 @@
 
 } 
  
-@media(max-width: 410px) {    
+@media(max-width: 410px) {      
+     
+    // faq
+     
+    .faq__question-title {
+        padding-right: 15px;
+    }
      
     // footer
      
@@ -1848,6 +1935,10 @@
      
     .product-one__title-safe {
         font-size: 21px;
+    } 
+     
+    .product-one__delivery {
+        margin: 0 auto 40px;
     }
 
 } 
@@ -1971,7 +2062,11 @@
      
     .about-furniture__text {
         padding-top: 10px;
-    } 
+    }  
+      
+    .alumin-furniture__img {
+        margin: 0 0 30px 0;
+    }
       
     // help 
 
@@ -2005,6 +2100,12 @@
         margin-bottom: 23px;
         font-size: 37px;
         line-height: 45px;
+    }  
+     
+    // faq
+     
+    .faq__title {
+        font-size: 37px;
     }
    
      
@@ -2106,7 +2207,11 @@
     .find-us__title {
         font-size: 34px;
         line-height: 47px;
-    }  
+    }   
+     
+    .faq__question-title{ 
+        line-height: 37px;
+    }
 
     // footer   
 

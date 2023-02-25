@@ -131,7 +131,15 @@
 
     .footer__top-office {
         margin-right: 0;
-    }  
+    }   
+       
+    //  alumin-furniture
+
+    .alumin-furniture__title {
+        font-size: 65px;
+        margin-bottom: 53px;
+        line-height: 53px;
+    }
 
 
 }
@@ -238,8 +246,38 @@
     .about-furniture__title{ 
         font-size: 67px; 
         line-height: 89px;
+    } 
+      
+    // alumin-furniture 
+
+    .alumin-furniture__img {
+        margin-right: 47px;
     }
      
+} 
+ 
+@media(max-width: 1515px) { 
+     
+    // alumin-furniture
+
+  .alumin-furniture__inner{ 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center;
+  }   
+   
+  .alumin-furniture__img {
+    margin: 0 0 47px 0;
+ } 
+  
+ .alumin-furniture__img {
+    margin: 0 0 67px 0;
+ } 
+  
+ .alumin-furniture__title {
+    margin-bottom: 33px;
+} 
+
 }
 
 
@@ -506,7 +544,13 @@
 
 }   
  
-@media(max-width: 1240px) {
+@media(max-width: 1240px) {  
+     
+     // product-one
+     
+    .product-one__delivery {
+        margin: 0 auto 50px;
+    }
 
     // footer 
 
@@ -1005,7 +1049,14 @@
    
   .product-one {
     margin-top: 40px;
- }
+ }  
+  
+//  alumin-furniture
+  
+ .alumin-furniture__title {
+    font-size: 47px;
+ } 
+
 
 }
  
@@ -1201,18 +1252,24 @@
      
     .about-furniture__img{ 
         height: 455px;
-    } 
+    }  
      
-    .product-one__stat{ 
-        font-size: 20px;
-    } 
+    .alumin-furniture__img {
+        margin: 0 0 40px 0;
+    }
+     
       
     // product-one__delivery 
 
     .product-one__delivery { 
         padding-right: 10px;
-    }
- 
+    }  
+     
+    .product-one__stat{ 
+        font-size: 20px;
+    } 
+     
+    
  }  
  
  
@@ -1358,8 +1415,21 @@
      
     .product-one__tabs{ 
         padding-right: 0;
+    }  
+      
+    // alumin-furniture 
+
+    .alumin-furniture__title {
+        text-align: center;
     } 
      
+    .alumin-furniture__text{ 
+        font-size: 20px;
+    } 
+     
+    .alumin-furniture__title {
+        margin-bottom: 23px; 
+    }
       
     // footer 
 
@@ -1927,6 +1997,14 @@
     .product-one__title {
         line-height: 45px;
         font-size: 37px;
+    } 
+      
+    // alumin-furniture
+     
+    .alumin-furniture__title {
+        margin-bottom: 23px;
+        font-size: 37px;
+        line-height: 45px;
     }
    
      

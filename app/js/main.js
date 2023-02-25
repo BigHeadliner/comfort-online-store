@@ -159,7 +159,20 @@ $(function () {
   $('.product-one__slider-big').slick({
      asNavFor: '.product-one__slider-nav',
      arrows: false,
-     draggable: false,
+     draggable: false,  
+
+     responsive: [
+      {
+        breakpoint: 930,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true, 
+          fade: true
+        }
+      }, 
+    ] 
   });
  
  
@@ -174,7 +187,8 @@ $(function () {
     slidesToScroll: 1,
     draggable: false, 
     variableWidth: true, 
-    slidesToShow: 5, 
+    slidesToShow: 5,  
+
   }); 
    
   $('.product-one__tab').on('click', function (e) {

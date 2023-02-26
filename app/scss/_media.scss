@@ -13,6 +13,16 @@
      
     .ship .slick-next {
         right: 37px;
+    }  
+     
+    // shop-sets
+     
+    .shop-sets__title{ 
+        font-size: 65px;
+    } 
+     
+    .shop-cards{ 
+        border: 1px solid greenyellow;
     }
 
 }
@@ -139,8 +149,18 @@
         font-size: 65px;
         margin-bottom: 53px;
         line-height: 53px;
-    }
+    }  
+     
+     // shop-cards
 
+   .shop-cards{ 
+      flex-wrap: wrap; 
+      justify-content: center;
+   } 
+    
+   .shop-card{ 
+    margin: 25px;
+   }
 
 }
  
@@ -284,7 +304,14 @@
    text-align: center;
     color: #000;
     margin-bottom: 65px;
+ }  
+   
+//  shop-sets
+
+ .shop-sets__title {
+    margin-bottom: 54px;
  } 
+ 
 
 }
 
@@ -383,7 +410,14 @@
 
     .help{
         padding-top: 105px;
-    }
+    } 
+      
+    // shop-sets 
+
+    .shop-sets__title {
+        margin-bottom: 34px;
+    } 
+
 
 } 
  
@@ -1312,8 +1346,14 @@
     .faq__question-top {
         margin-top: 29px;
         margin-bottom: 27px; 
-    }
- 
+    } 
+      
+    //  shop-sets 
+
+    .shop-sets__title {
+        margin-bottom: 14px;
+    } 
+
  }  
   
  @media(max-width:570px) { 
@@ -1504,6 +1544,15 @@
 
     .faq__question-top {
         padding-right: 15px;
+    } 
+      
+    // shop-card 
+
+    .shop-card__btn{  
+       width: 100%; 
+       padding: 14px 15px 14px 15px; 
+       display: block; 
+       text-align: center;
     }
       
     // footer 
@@ -1520,8 +1569,8 @@
     .footer__top-title--join{ 
         position: absolute; 
         top: 25px;
-    }
-     
+    } 
+      
  } 
  
 @media(max-width: 470px) {
@@ -1699,7 +1748,25 @@
     .about-furniture__paragraph {
         font-size: 17px;
         line-height: 33px;
+    }  
+      
+    // shop-card 
+
+    .shop-card{ 
+        margin: 15px 0;
     } 
+     
+    .shop-card__img {
+        margin-bottom: 9px;
+    } 
+     
+    .shop-card__subtitle {
+        margin-bottom: 1px;
+    } 
+     
+    .shop-card__price {
+        margin-bottom: 10px;
+    }
       
     // footer 
 

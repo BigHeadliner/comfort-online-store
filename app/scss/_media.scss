@@ -22,7 +22,7 @@
     } 
      
     .shop-cards{ 
-        border: 1px solid greenyellow;
+        border: 1px solid transparent;
     }
 
 }
@@ -310,7 +310,14 @@
 
  .shop-sets__title {
     margin-bottom: 54px;
- } 
+ }   
+  
+//  reviews
+  
+ .reviews__comments{ 
+    padding: 0 10px; 
+    border: 1px solid transparent;
+ }
  
 
 }
@@ -572,7 +579,14 @@
      
     .find-us__title{ 
         text-align: center;
-    } 
+    }  
+      
+    // reviews 
+
+    .reviews__content-text{ 
+        font-size: 20px;
+    }
+
       
     // footer 
 
@@ -592,6 +606,43 @@
      
     .product-one__delivery {
         margin: 0 auto 70px;
+    } 
+      
+    // reviews 
+
+    .reviews__comment{ 
+        border: 1px solid transparent; 
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(2, 1fr); 
+        margin-bottom: 70px;
+    } 
+      
+   
+    .reviews__date{ 
+        text-align: right;
+    } 
+     
+    .reviews__content{  
+        grid-column-start: 1; 
+        grid-column-end: 3; 
+        order: 3;
+    } 
+     
+    .reviews__content-title{
+        margin: 15px 0 5px; 
+    } 
+     
+    .reviews__author-name {
+        margin-bottom: 9px;
+    } 
+     
+    .reviews__date-month {
+        margin-bottom: 9px;
+    } 
+     
+    .reviews__verified-wrapper {
+        margin-bottom: 7px;
     }
 
     // footer 
@@ -713,7 +764,19 @@
 
     .product-one {
         margin-top: 70px; 
-     }
+     } 
+       
+    //  reviews 
+
+     .reviews__btn {
+        font-size: 20px;
+        color: #fff;
+        padding: 10px 19px;
+    }    
+     
+    .reviews__title {
+        font-size: 47px;
+    }
      
 }
  
@@ -845,6 +908,16 @@
 
     .about-furniture {
         margin-bottom: 54px;
+    } 
+      
+    // reviews 
+
+    .reviews__comment {
+        margin-bottom: 50px;
+    } 
+     
+    .reviews__top{ 
+        margin-bottom: 38px;
     }
 
 } 
@@ -938,6 +1011,18 @@
 
     .faq__question-text {
         margin-bottom: 40px;
+    } 
+      
+    // reviews 
+
+    .reviews__nav-item{ 
+        width: 67px; 
+        height: 67px; 
+        font-size: 20px;
+    } 
+     
+    .reviews__nav{ 
+        max-width: 419px;
     }
 
 
@@ -1184,6 +1269,13 @@
      
     .about-furniture {
         margin-bottom: 47px;
+    } 
+      
+    //  reviews
+     
+
+    .reviews__title {
+        font-size: 39px;
     }
 
 }  
@@ -1245,6 +1337,12 @@
      
     .product-one__delivery {
         margin: 0 auto 50px;
+    }  
+     
+    // reviews
+     
+    .reviews__content-title {
+        margin: 0px 0 5px;
     }
 
       
@@ -1352,7 +1450,13 @@
 
     .shop-sets__title {
         margin-bottom: 14px;
-    } 
+    }  
+      
+    // reviews 
+
+    .reviews__nav{ 
+       margin: 0 auto 50px;  
+    }
 
  }  
   
@@ -1371,7 +1475,13 @@
     .faq__question-text {
         margin-bottom: 25px; 
         font-size: 20px;
-    } 
+    }  
+      
+    // reviews 
+
+    .reviews__comment{ 
+        height: 297px;
+    }
       
  }
 
@@ -1420,6 +1530,13 @@
 
     .faq__question-title {
         font-size: 15px;
+    }  
+     
+    // reviews
+     
+    .reviews__content-text{ 
+        font-size: 18px; 
+        line-height: 24px;
     }
     
 }
@@ -1611,7 +1728,23 @@
         min-width: 197px;
         margin-bottom: 0; 
         height: 233px;
+    }   
+      
+    // reviews 
+
+    .reviews__top{ 
+      display: block;
+    } 
+     
+    .reviews__title{ 
+       text-align: center; 
+       margin-bottom: 30px;
     }  
+     
+    .reviews__btn{  
+        display: block;
+        margin: 0 auto;
+    }
      
     // footer
      
@@ -1753,7 +1886,7 @@
     // shop-card 
 
     .shop-card{ 
-        margin: 15px 0;
+        margin: 20px 0;
     } 
      
     .shop-card__img {
@@ -1871,13 +2004,22 @@
         font-size: 22px; 
         line-height: 27px; 
         margin-bottom: 95px;
-    } 
+    }  
+     
+      
+    // reviews 
+
+    .reviews__comments{ 
+        padding: 0;
+    }
+     
+     // footer 
      
     .footer__bottom-menu{ 
         display: none;
     } 
       
-    // footer 
+   
 
     .footer__top {
         margin-bottom: 0;
@@ -2006,6 +2148,28 @@
      
     .product-one__delivery {
         margin: 0 auto 40px;
+    } 
+      
+    // reviews 
+
+    .reviews__nav-item {
+        width: 53px;
+        height: 53px; 
+    } 
+     
+    .reviews__author-name, 
+    .reviews__date-day{ 
+       font-size: 21px; 
+    } 
+     
+    .reviews__verified{ 
+        font-size: 23px;
+    } 
+     
+    .reviews__verified-wrapper::after {
+        position: absolute;
+        top: -9px;
+        right: -5px;
     }
 
 } 
@@ -2080,7 +2244,14 @@
     .product-one__price-new,
     .product-one__price-old{ 
         font-size: 20px;
-    }
+    } 
+      
+    // reviews 
+
+    .reviews__comment {
+        margin-bottom: 40px;
+    } 
+
 }  
  
 @media(max-width: 345px) {
@@ -2173,6 +2344,13 @@
      
     .faq__title {
         font-size: 37px;
+    } 
+     
+    // reviews  
+
+    .reviews__date-month, 
+    .reviews__author-name {
+        margin-bottom: 4px;
     }
    
      

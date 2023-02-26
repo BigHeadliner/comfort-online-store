@@ -1397,7 +1397,8 @@
    }  
     
    &__nav-item--active{ 
-      background-color: $main-btn-color;
+      background-color: $main-btn-color; 
+      border: 1px solid transparent;
    } 
     
    &__nav-link--active{ 
